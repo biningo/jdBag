@@ -39,17 +39,6 @@ class ForeignTradeApplicationTests {
     void contextLoads() {
 
 
-        Message message = new Message();
-        message.setName("test");
-        message.setContact("111");
-        message.setAddress("ddb");
-        message.setContent("test");
-        message.setVisit("false");
-        DateTimeFormatter dateTimeFormatter =DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        String format = dateTimeFormatter.format(LocalDateTime.now());
-        message.setDate(format);
-
-        messageRepository.save(message);
 
     }
 

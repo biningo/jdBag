@@ -5,14 +5,11 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
 
-@Data
 @Entity
 @Table(name = "commodity")
 //商品
+@Data
 public class Commodity implements Serializable {
 
     @Id
@@ -44,12 +41,6 @@ public class Commodity implements Serializable {
 
     @Column(name = "recommend")
     private boolean recommend;  //是否是推荐
-
-
-
-
-
-
 
 
 }
